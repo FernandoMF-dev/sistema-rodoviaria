@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/fmf_database
+    username: fmf_user
+    password: fmf_password
+  liquibase:
+    change-log: classpath*:liquibase/master.xml
