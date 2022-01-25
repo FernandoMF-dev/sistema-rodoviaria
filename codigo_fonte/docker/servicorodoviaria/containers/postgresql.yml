@@ -1,9 +1,8 @@
-version: "3.1"
+version: "2.4"
 
 services:
   servicorodoviaria-postgresql:
     image: postgres:14.1-alpine
-    container_name: servicorodoviaria-postgresql
     ports:
       - "5432:5432"
     environment:
