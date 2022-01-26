@@ -33,7 +33,7 @@ public class Pessoa implements Serializable {
 	@Column(name = "DATA_NASCIMENTO", nullable = false)
 	private LocalDate dataNascimento;
 
-	@Column(name = "CIDADE", nullable = false, length = 100)
+	@Column(name = "CIDADE", nullable = false, length = 50)
 	private String cidade;
 
 	@Column(name = "ESTADO", nullable = false, length = 2)
