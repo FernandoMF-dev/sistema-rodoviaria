@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b11c9271-61ff-4545-ba42-14d171cdd9ed" name="Changes" comment="Criando tabela 'TB_ONIBUS'">
-      <change afterPath="$PROJECT_DIR$/servico/src/main/resources/liquibase/changelogs/20220126161500_create_table_passe.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b11c9271-61ff-4545-ba42-14d171cdd9ed" name="Changes" comment="Criando tabela 'TB_COBRANCA_VIAGEM'" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +52,7 @@
     <option name="myId2Visible">
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
@@ -141,7 +139,7 @@
       <workItem from="1643201109048" duration="306000" />
       <workItem from="1643205728657" duration="3619000" />
       <workItem from="1643219667934" duration="724000" />
-      <workItem from="1643220455629" duration="4298000" />
+      <workItem from="1643220455629" duration="5484000" />
     </task>
     <task id="LOCAL-00001" summary="Criando o pom parent e movendo a pasta docker">
       <created>1643151600709</created>
@@ -248,7 +246,28 @@
       <option name="project" value="LOCAL" />
       <updated>1643224464622</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Criando tabela 'TB_PASSE'">
+      <created>1643225218520</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1643225218520</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Criando tabela 'TB_PASSE'&#10;&#10;Signed-off-by: Fernando Martins Ferreira &lt;fernando.ferreira@basis.com.br&gt;">
+      <created>1643225395295</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1643225395295</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Criando tabela 'TB_COBRANCA_VIAGEM'">
+      <created>1643225899412</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1643225899412</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +298,10 @@
     <MESSAGE value="Criando tabela 'TB_PESSOA'" />
     <MESSAGE value="Criando tabela 'TB_PESSOA'&#10;&#10;Signed-off-by: Fernando Martins Ferreira &lt;fernando.ferreira@basis.com.br&gt;" />
     <MESSAGE value="Criando tabela 'TB_ONIBUS'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando tabela 'TB_ONIBUS'" />
+    <MESSAGE value="Criando tabela 'TB_PASSE'" />
+    <MESSAGE value="Criando tabela 'TB_PASSE'&#10;&#10;Signed-off-by: Fernando Martins Ferreira &lt;fernando.ferreira@basis.com.br&gt;" />
+    <MESSAGE value="Criando tabela 'TB_COBRANCA_VIAGEM'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando tabela 'TB_COBRANCA_VIAGEM'" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+		xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+
+	<changeSet id="20220126163000-1" author="FernandoMF-dev" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+		<createTable tableName="TB_COBRANCA_VIAGEM">
+			<column name="ID_COBRANCA_VIAGEM" type="BIGINT">
+				<constraints nullable="false"/>
+			</column>
+
+			<column name="DATA_HORA" type="DATETIME"/>
+
+			<column name="VALOR" type="DOUBLE">
+				<constraints nullable="false"/>
+			</column>
+
+			<column name="ID_PASSE" type="BIGINT">
+				<constraints nullable="false"/>
+			</column>
+
+			<column name="ID_ONIBUS" type="BIGINT">
+				<constraints nullable="false"/>
+			</column>
+
+			<column name="EXCLUIDO" type="BOOLEAN" defaultValueBoolean="false">
+				<constraints nullable="false"/>
+			</column>
+		</createTable>
+
+		<rollback>
+			<dropTable tableName="TB_COBRANCA_VIAGEM"/>
+		</rollback>
+	</changeSet>
+
+	<changeSet id="20220126163000-2" author="FernandoMF-dev" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+		<addPrimaryKey tableName="TB_COBRANCA_VIAGEM" columnNames="ID_COBRANCA_VIAGEM"
+					   constraintName="PK_COBRANCA_VIAGEM"/>
+
+		<rollback>
+			<dropPrimaryKey tableName="TB_COBRANCA_VIAGEM" constraintName="PK_COBRANCA_VIAGEM"/>
+		</rollback>
+	</changeSet>
+
+	<changeSet id="20220126163000-3" author="FernandoMF-dev" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+		<addForeignKeyConstraint baseTableName="TB_COBRANCA_VIAGEM" baseColumnNames="ID_ONIBUS"
+								 referencedTableName="TB_ONIBUS" referencedColumnNames="ID_ONIBUS"
+								 constraintName="FK_COBRANCA_VIAGEM_ONIBUS"/>
+
+		<addForeignKeyConstraint baseTableName="TB_COBRANCA_VIAGEM" baseColumnNames="ID_PASSE"
+								 referencedTableName="TB_PASSE" referencedColumnNames="ID_PASSE"
+								 constraintName="FK_COBRANCA_VIAGEM_PASSE"/>
+
+		<rollback>
+			<dropAllForeignKeyConstraints baseTableName="TB_COBRANCA_VIAGEM"/>
+		</rollback>
+	</changeSet>
+
+	<changeSet id="20220126163000-4" author="FernandoMF-dev" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+		<createSequence sequenceName="SEQ_COBRANCA_VIAGEM" startValue="1" incrementBy="1"/>
+
+		<rollback>
+			<dropSequence sequenceName="SEQ_COBRANCA_VIAGEM"/>
+		</rollback>
+	</changeSet>
+
+</databaseChangeLog>
