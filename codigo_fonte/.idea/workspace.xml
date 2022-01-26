@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b11c9271-61ff-4545-ba42-14d171cdd9ed" name="Changes" comment="Adicionando campo para controle de exclusão lógica">
-      <changelist_data name="FernandoMF-dev" email="81381205+fernandomf-dev@users.noreply.github.com" />
-      <change afterPath="$PROJECT_DIR$/servico/src/main/resources/liquibase/changelogs/20220126154500_create_table_pessoa.xml" afterDir="false" />
+    <list default="true" id="b11c9271-61ff-4545-ba42-14d171cdd9ed" name="Changes" comment="Criando tabela 'TB_PESSOA'">
+      <change afterPath="$PROJECT_DIR$/servico/src/main/resources/liquibase/changelogs/20220126160000_create_table_onibus.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servico/src/main/resources/liquibase/master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/servico/src/main/resources/liquibase/master.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +55,7 @@
     <option name="myId2Visible">
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
@@ -144,7 +142,7 @@
       <workItem from="1643201109048" duration="306000" />
       <workItem from="1643205728657" duration="3619000" />
       <workItem from="1643219667934" duration="724000" />
-      <workItem from="1643220455629" duration="3203000" />
+      <workItem from="1643220455629" duration="3865000" />
     </task>
     <task id="LOCAL-00001" summary="Criando o pom parent e movendo a pasta docker">
       <created>1643151600709</created>
@@ -216,7 +214,28 @@
       <option name="project" value="LOCAL" />
       <updated>1643222896545</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Criando tabela 'TB_PESSOA'">
+      <created>1643223741057</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1643223741057</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Criando tabela 'TB_PESSOA'&#10;&#10;Signed-off-by: Fernando Martins Ferreira &lt;fernando.ferreira@basis.com.br&gt;">
+      <created>1643223924272</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1643223924272</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Criando tabela 'TB_PESSOA'">
+      <created>1643224066767</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1643224066767</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +263,9 @@
     <MESSAGE value="Criando classe 'CobrancaViagem'" />
     <MESSAGE value="Criando classe 'NotaFiscal'" />
     <MESSAGE value="Adicionando campo para controle de exclusão lógica" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionando campo para controle de exclusão lógica" />
+    <MESSAGE value="Criando tabela 'TB_PESSOA'&#10;&#10;Signed-off-by: Fernando Martins Ferreira &lt;fernando.ferreira@basis.com.br&gt;" />
+    <MESSAGE value="Criando tabela 'TB_PESSOA'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando tabela 'TB_PESSOA'" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
