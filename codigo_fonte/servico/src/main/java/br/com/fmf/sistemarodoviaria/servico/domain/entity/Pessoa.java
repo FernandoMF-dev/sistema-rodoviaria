@@ -6,6 +6,7 @@ import lombok.Setter;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -50,7 +51,7 @@ public class Pessoa implements Serializable {
 	@Column(name = "EMAIL", length = 200)
 	private String email;
 
-	@OneToMany(mappedBy = "pessoa", cascade = CascadeType.PERSIST)
+	@OneToMany(mappedBy = "pessoa", fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
 	private List<Passe> passes = new ArrayList<>();
 
 }

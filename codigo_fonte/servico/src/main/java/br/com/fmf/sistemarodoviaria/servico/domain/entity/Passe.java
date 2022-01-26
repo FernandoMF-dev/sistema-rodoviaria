@@ -33,10 +33,10 @@ public class Passe implements Serializable {
 	@Column(name = "RFID", nullable = false)
 	private Long rfid;
 
-	@Column(name = "SALDO", unique = true)
+	@Column(name = "SALDO", nullable = false)
 	private Double saldo;
 
-	@Column(name = "ATIVO")
+	@Column(name = "ATIVO", nullable = false)
 	private Boolean ativo;
 
 	@Enumerated(EnumType.STRING)
@@ -44,7 +44,7 @@ public class Passe implements Serializable {
 	private CategoriaPasse categoria;
 
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "ID_PESSOA")
+	@JoinColumn(name = "ID_PESSOA", nullable = false)
 	private Pessoa pessoa;
 
 }

@@ -34,10 +34,10 @@ public class Onibus implements Serializable {
 	@Column(name = "NOME_LINHA", nullable = false, length = 100)
 	private String nomeLinha;
 
-	@Column(name = "INICIO_CIRCULACAO")
+	@Column(name = "INICIO_CIRCULACAO", nullable = false)
 	private LocalTime inicioCirculacao;
 
-	@Column(name = "FIM_CIRCULACAO")
+	@Column(name = "FIM_CIRCULACAO", nullable = false)
 	private LocalTime fimCirculacao;
 
 }

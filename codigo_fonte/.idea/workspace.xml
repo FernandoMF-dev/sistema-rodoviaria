@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b11c9271-61ff-4545-ba42-14d171cdd9ed" name="Changes" comment="Criando classe 'Onibus'">
-      <change afterPath="$PROJECT_DIR$/servico/src/main/java/br/com/fmf/sistemarodoviaria/servico/domain/entity/Passe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servico/src/main/java/br/com/fmf/sistemarodoviaria/servico/domain/enums/CategoriaPasse.java" afterDir="false" />
+    <list default="true" id="b11c9271-61ff-4545-ba42-14d171cdd9ed" name="Changes" comment="Criando classe 'Passe'">
+      <change afterPath="$PROJECT_DIR$/servico/src/main/java/br/com/fmf/sistemarodoviaria/servico/domain/entity/CobrancaViagem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/servico/src/main/java/br/com/fmf/sistemarodoviaria/servico/domain/entity/Onibus.java" beforeDir="false" afterPath="$PROJECT_DIR$/servico/src/main/java/br/com/fmf/sistemarodoviaria/servico/domain/entity/Onibus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servico/src/main/java/br/com/fmf/sistemarodoviaria/servico/domain/entity/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/servico/src/main/java/br/com/fmf/sistemarodoviaria/servico/domain/entity/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/servico/src/main/java/br/com/fmf/sistemarodoviaria/servico/domain/entity/Passe.java" beforeDir="false" afterPath="$PROJECT_DIR$/servico/src/main/java/br/com/fmf/sistemarodoviaria/servico/domain/entity/Passe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +21,8 @@
         <option value="Interface" />
         <option value="com.haulmont.jpb.JpaLiquibaseChangeLog" />
         <option value="Class" />
-        <option value="com.haulmont.jpb.JpaEntity" />
         <option value="Enum" />
+        <option value="com.haulmont.jpb.JpaEntity" />
       </list>
     </option>
   </component>
@@ -137,7 +136,7 @@
       <workItem from="1643201109048" duration="306000" />
       <workItem from="1643205728657" duration="3619000" />
       <workItem from="1643219667934" duration="724000" />
-      <workItem from="1643220455629" duration="1118000" />
+      <workItem from="1643220455629" duration="1858000" />
     </task>
     <task id="LOCAL-00001" summary="Criando o pom parent e movendo a pasta docker">
       <created>1643151600709</created>
@@ -181,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643220781131</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Criando classe 'Passe'">
+      <created>1643221806338</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1643221806338</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +211,8 @@
     <MESSAGE value="Adicionando MRN do banco de dados" />
     <MESSAGE value="Criando classe 'Pessoa'" />
     <MESSAGE value="Criando classe 'Onibus'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando classe 'Onibus'" />
+    <MESSAGE value="Criando classe 'Passe'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando classe 'Passe'" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
