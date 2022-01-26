@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+		xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+
+
+	<changeSet id="20220126164000-1" author="FernandoMF-dev" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+		<createTable tableName="TB_NOTA_FISCAL">
+			<column name="ID_NOTA_FISCAL" type="BIGINT">
+				<constraints nullable="false"/>
+			</column>
+
+			<column name="ID_COBRANCA_VIAGEM" type="BIGINT">
+				<constraints nullable="false"/>
+			</column>
+
+			<column name="NOME_ARQUIVO" type="VARCHAR(200)"/>
+
+			<column name="EXTENSAO" type="VARCHAR(20)"/>
+
+			<column name="EXCLUIDO" type="BOOLEAN" defaultValueBoolean="false">
+				<constraints nullable="false"/>
+			</column>
+		</createTable>
+
+		<rollback>
+			<dropTable tableName="TB_NOTA_FISCAL"/>
+		</rollback>
+	</changeSet>
+
+	<changeSet id="20220126164000-2" author="FernandoMF-dev" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+		<addPrimaryKey tableName="TB_NOTA_FISCAL" columnNames="ID_NOTA_FISCAL" constraintName="PK_NOTA_FISCAL"/>
+
+		<rollback>
+			<dropPrimaryKey tableName="TB_NOTA_FISCAL" constraintName="PK_NOTA_FISCAL"/>
+		</rollback>
+	</changeSet>
+
+	<changeSet id="20220126164000-3" author="FernandoMF-dev" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+		<addForeignKeyConstraint baseTableName="TB_NOTA_FISCAL" baseColumnNames="ID_COBRANCA_VIAGEM"
+								 referencedTableName="TB_COBRANCA_VIAGEM" referencedColumnNames="ID_COBRANCA_VIAGEM"
+								 constraintName="FK_NOTA_FISCAL_COBRANCA_VIAGEM"/>
+
+		<rollback>
+			<dropAllForeignKeyConstraints baseTableName="TB_NOTA_FISCAL"/>
+		</rollback>
+	</changeSet>
+
+	<changeSet id="20220126164000-4" author="FernandoMF-dev" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+		<createSequence sequenceName="SEQ_NOTA_FISCAL" startValue="1" incrementBy="1"/>
+
+		<rollback>
+			<dropSequence sequenceName="SEQ_NOTA_FISCAL"/>
+		</rollback>
+	</changeSet>
+
+</databaseChangeLog>
