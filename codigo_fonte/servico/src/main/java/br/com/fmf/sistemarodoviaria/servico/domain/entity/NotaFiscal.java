@@ -14,32 +14,27 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
-import java.time.LocalDateTime;
 
 @Getter
 @Setter
 @Entity
-@Table(name = "TB_COBRANCA_VIAGEM")
-public class CobrancaViagem {
+@Table(name = "TB_NOTA_FISCAL")
+public class NotaFiscal {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
-	@SequenceGenerator(name = "SEQ_COBRANCA_VIAGEM", sequenceName = "SEQ_COBRANCA_VIAGEM", allocationSize = 1)
-	@Column(name = "ID_COBRANCA_VIAGEM", nullable = false)
+	@SequenceGenerator(name = "SEQ_NOTA_FISCAL", sequenceName = "SEQ_NOTA_FISCAL", allocationSize = 1)
+	@Column(name = "ID_NOTA_FISCAL", nullable = false)
 	private Long id;
 
-	@Column(name = "DATA_HORA")
-	private LocalDateTime dataHora;
-
-	@Column(name = "VALOR", nullable = false)
-	private Double valor;
-
 	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
-	@JoinColumn(name = "ID_PASSE", nullable = false)
-	private Passe passe;
+	@JoinColumn(name = "ID_COBRANCA_VIAGEM", nullable = false)
+	private CobrancaViagem cobranca;
 
-	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
-	@JoinColumn(name = "ID_ONIBUS", nullable = false)
-	private Onibus onibus;
+	@Column(name = "NOME_ARQUIVO", length = 200)
+	private String nomeArquivo;
+
+	@Column(name = "EXTENSAO", length = 20)
+	private String extensao;
 
 }
