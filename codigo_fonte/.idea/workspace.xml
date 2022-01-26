@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b11c9271-61ff-4545-ba42-14d171cdd9ed" name="Changes" comment="Criando o pom parent e movendo a pasta docker">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documento/src/main/java/br/com/fmf/sistemarodoviaria/documento/rest/DocumentoResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servico/src/main/java/br/com/fmf/sistemarodoviaria/servico/rest/TesteResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servico/src/main/java/br/com/fmf/sistemarodoviaria/servico/service/feign/DocumentoClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="b11c9271-61ff-4545-ba42-14d171cdd9ed" name="Changes" comment="Implementando FeingClient">
+      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servico/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/servico/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servico/src/main/java/br/com/fmf/sistemarodoviaria/servico/SistemaDeRodoviariaServicoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/servico/src/main/java/br/com/fmf/sistemarodoviaria/servico/SistemaDeRodoviariaServicoApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +81,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SistemaDeRodoviariaDocumentoApplication">
+  <component name="RunManager" selected="Spring Boot.SistemaDeRodoviariaServicoApplication">
     <configuration name="SistemaDeRodoviariaDocumentoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="documento" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.fmf.sistemarodoviaria.documento.SistemaDeRodoviariaDocumentoApplication" />
@@ -133,7 +127,7 @@
       <workItem from="1643149790352" duration="4810000" />
       <workItem from="1643193847611" duration="707000" />
       <workItem from="1643201109048" duration="306000" />
-      <workItem from="1643205728657" duration="2152000" />
+      <workItem from="1643205728657" duration="2570000" />
     </task>
     <task id="LOCAL-00001" summary="Criando o pom parent e movendo a pasta docker">
       <created>1643151600709</created>
@@ -142,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643151600710</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implementando FeingClient">
+      <created>1643210879128</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1643210879128</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +162,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Criando o pom parent e movendo a pasta docker" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando o pom parent e movendo a pasta docker" />
+    <MESSAGE value="Implementando FeingClient" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementando FeingClient" />
   </component>
 </project>
