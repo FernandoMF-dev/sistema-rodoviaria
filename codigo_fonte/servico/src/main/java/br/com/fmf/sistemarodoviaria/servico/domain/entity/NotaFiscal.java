@@ -37,4 +37,7 @@ public class NotaFiscal {
 	@Column(name = "EXTENSAO", length = 20)
 	private String extensao;
 
+	@Column(name = "EXCLUIDO", nullable = false)
+	private Boolean excluido;
+
 }

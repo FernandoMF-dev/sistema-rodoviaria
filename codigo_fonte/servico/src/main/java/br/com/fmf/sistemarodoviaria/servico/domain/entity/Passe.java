@@ -47,4 +47,7 @@ public class Passe implements Serializable {
 	@JoinColumn(name = "ID_PESSOA", nullable = false)
 	private Pessoa pessoa;
 
+	@Column(name = "EXCLUIDO", nullable = false)
+	private Boolean excluido;
+
 }

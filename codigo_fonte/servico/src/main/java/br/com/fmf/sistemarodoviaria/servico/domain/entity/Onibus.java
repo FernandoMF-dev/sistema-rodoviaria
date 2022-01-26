@@ -40,4 +40,7 @@ public class Onibus implements Serializable {
 	@Column(name = "FIM_CIRCULACAO", nullable = false)
 	private LocalTime fimCirculacao;
 
+	@Column(name = "EXCLUIDO", nullable = false)
+	private Boolean excluido;
+
 }

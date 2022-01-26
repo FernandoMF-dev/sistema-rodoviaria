@@ -42,4 +42,7 @@ public class CobrancaViagem {
 	@JoinColumn(name = "ID_ONIBUS", nullable = false)
 	private Onibus onibus;
 
+	@Column(name = "EXCLUIDO", nullable = false)
+	private Boolean excluido;
+
 }

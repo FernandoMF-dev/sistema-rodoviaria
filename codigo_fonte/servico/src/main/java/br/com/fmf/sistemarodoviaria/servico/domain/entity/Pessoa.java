@@ -54,4 +54,7 @@ public class Pessoa implements Serializable {
 	@OneToMany(mappedBy = "pessoa", fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
 	private List<Passe> passes = new ArrayList<>();
 
+	@Column(name = "EXCLUIDO", nullable = false)
+	private Boolean excluido;
+
 }
