@@ -3,25 +3,30 @@ package br.com.fmf.sistemarodoviaria.servico.domain.entity;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
-@Entity
-@Table(name = "TB_PESSOA")
 @Getter
 @Setter
+@Entity
+@Table(name = "TB_PESSOA")
 public class Pessoa implements Serializable {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_PESSOA")
 	@SequenceGenerator(name = "SEQ_PESSOA", sequenceName = "SEQ_PESSOA", allocationSize = 1)
-	@Column(name = "ID", nullable = false)
+	@Column(name = "ID_PESSOA", nullable = false)
 	private Long id;
 
 	@Column(name = "NOME", nullable = false, length = 100)
@@ -44,5 +49,8 @@ public class Pessoa implements Serializable {
 
 	@Column(name = "EMAIL", length = 200)
 	private String email;
+
+	@OneToMany(mappedBy = "pessoa", cascade = CascadeType.PERSIST)
+	private List<Passe> passes = new ArrayList<>();
 
 }

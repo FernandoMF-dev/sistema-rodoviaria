@@ -10,17 +10,19 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import java.io.Serializable;
 import java.time.LocalTime;
 
 @Getter
 @Setter
 @Entity
 @Table(name = "TB_ONIBUS")
-public class Onibus {
+public class Onibus implements Serializable {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	@SequenceGenerator(name = "SEQ_ONIBUS", sequenceName = "SEQ_ONIBUS", allocationSize = 1)
-	@Column(name = "ID", nullable = false)
+	@Column(name = "ID_ONIBUS", nullable = false)
 	private Long id;
 
 	@Column(name = "CIDADE", nullable = false, length = 50)
