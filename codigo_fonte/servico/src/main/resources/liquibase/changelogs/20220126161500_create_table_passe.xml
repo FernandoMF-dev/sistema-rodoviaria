@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+		xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+
+	<changeSet id="20220126161500-1" author="FernandoMF-dev" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+		<createTable tableName="TB_PASSE">
+			<column name="ID_PASSE" type="BIGINT">
+				<constraints nullable="false"/>
+			</column>
+
+			<column name="RFID" type="BIGINT">
+				<constraints nullable="false"/>
+			</column>
+
+			<column name="SALDO" type="DOUBLE">
+				<constraints nullable="false"/>
+			</column>
+
+			<column name="ATIVO" type="BOOLEAN" defaultValueBoolean="true">
+				<constraints nullable="false"/>
+			</column>
+
+			<column name="CATEGORIA" type="VARCHAR(255)">
+				<constraints nullable="false"/>
+			</column>
+
+			<column name="ID_PESSOA" type="BIGINT">
+				<constraints nullable="false"/>
+			</column>
+
+			<column name="EXCLUIDO" type="BOOLEAN" defaultValueBoolean="false">
+				<constraints nullable="false"/>
+			</column>
+		</createTable>
+
+		<rollback>
+			<dropTable tableName="TB_PASSE"/>
+		</rollback>
+	</changeSet>
+
+	<changeSet id="20220126161500-2" author="FernandoMF-dev" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+		<addPrimaryKey tableName="TB_PASSE" columnNames="ID_PASSE" constraintName="PK_PASSE"/>
+
+		<rollback>
+			<dropPrimaryKey tableName="TB_PASSE" constraintName="PK_PASSE"/>
+		</rollback>
+	</changeSet>
+
+	<changeSet id="20220126161500-3" author="FernandoMF-dev" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+		<addForeignKeyConstraint baseTableName="TB_PASSE" baseColumnNames="ID_PESSOA"
+								 referencedTableName="TB_PESSOA" referencedColumnNames="ID_PESSOA"
+								 constraintName="FK_PASSE_PESSOA"/>
+
+		<rollback>
+			<dropAllForeignKeyConstraints baseTableName="TB_PASSE"/>
+		</rollback>
+	</changeSet>
+
+	<changeSet id="20220126161500-4" author="FernandoMF-dev" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+		<createSequence sequenceName="SEQ_PASSE" startValue="1" incrementBy="1"/>
+
+		<rollback>
+			<dropSequence sequenceName="SEQ_PASSE"/>
+		</rollback>
+	</changeSet>
+
+</databaseChangeLog>
