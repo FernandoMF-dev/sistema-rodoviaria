@@ -13,6 +13,10 @@
 	<name>Sistema de Rodoviaria - Servico</name>
 	<description>Projeto responsável por manter a lógica de negócio</description>
 
+	<properties>
+		<hibernate.version>5.4.15.Final</hibernate.version>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -44,6 +48,12 @@
 		<dependency>
 			<groupId>org.mapstruct</groupId>
 			<artifactId>mapstruct</artifactId>
+			<version>${mapstruct.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct-processor</artifactId>
 			<version>${mapstruct.version}</version>
 		</dependency>
 	</dependencies>

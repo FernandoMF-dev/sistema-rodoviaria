@@ -6,63 +6,63 @@
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
 
 	<changeSet id="20220126163000-1" author="FernandoMF-dev" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
-		<createTable tableName="TB_COBRANCA_VIAGEM">
-			<column name="ID_COBRANCA_VIAGEM" type="BIGINT">
+		<createTable tableName="tb_cobranca_viagem">
+			<column name="id_cobranca_viagem" type="BIGINT">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="DATA_HORA" type="DATETIME"/>
+			<column name="data_hora" type="DATETIME"/>
 
-			<column name="VALOR" type="DOUBLE">
+			<column name="valor" type="DOUBLE">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="ID_PASSE" type="BIGINT">
+			<column name="id_passe" type="BIGINT">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="ID_ONIBUS" type="BIGINT">
+			<column name="id_onibus" type="BIGINT">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="EXCLUIDO" type="BOOLEAN" defaultValueBoolean="false">
+			<column name="excluido" type="BOOLEAN" defaultValueBoolean="false">
 				<constraints nullable="false"/>
 			</column>
 		</createTable>
 
 		<rollback>
-			<dropTable tableName="TB_COBRANCA_VIAGEM"/>
+			<dropTable tableName="tb_cobranca_viagem"/>
 		</rollback>
 	</changeSet>
 
 	<changeSet id="20220126163000-2" author="FernandoMF-dev" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
-		<addPrimaryKey tableName="TB_COBRANCA_VIAGEM" columnNames="ID_COBRANCA_VIAGEM"
-					   constraintName="PK_COBRANCA_VIAGEM"/>
+		<addPrimaryKey tableName="tb_cobranca_viagem" columnNames="id_cobranca_viagem"
+					   constraintName="pk_cobranca_viagem"/>
 
 		<rollback>
-			<dropPrimaryKey tableName="TB_COBRANCA_VIAGEM" constraintName="PK_COBRANCA_VIAGEM"/>
+			<dropPrimaryKey tableName="tb_cobranca_viagem" constraintName="pk_cobranca_viagem"/>
 		</rollback>
 	</changeSet>
 
 	<changeSet id="20220126163000-3" author="FernandoMF-dev" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
-		<addForeignKeyConstraint baseTableName="TB_COBRANCA_VIAGEM" baseColumnNames="ID_ONIBUS"
-								 referencedTableName="TB_ONIBUS" referencedColumnNames="ID_ONIBUS"
-								 constraintName="FK_COBRANCA_VIAGEM_ONIBUS"/>
+		<addForeignKeyConstraint baseTableName="tb_cobranca_viagem" baseColumnNames="id_onibus"
+								 referencedTableName="tb_onibus" referencedColumnNames="id_onibus"
+								 constraintName="fk_cobranca_viagem_onibus"/>
 
-		<addForeignKeyConstraint baseTableName="TB_COBRANCA_VIAGEM" baseColumnNames="ID_PASSE"
-								 referencedTableName="TB_PASSE" referencedColumnNames="ID_PASSE"
-								 constraintName="FK_COBRANCA_VIAGEM_PASSE"/>
+		<addForeignKeyConstraint baseTableName="tb_cobranca_viagem" baseColumnNames="id_passe"
+								 referencedTableName="tb_passe" referencedColumnNames="id_passe"
+								 constraintName="fk_cobranca_viagem_passe"/>
 
 		<rollback>
-			<dropAllForeignKeyConstraints baseTableName="TB_COBRANCA_VIAGEM"/>
+			<dropAllForeignKeyConstraints baseTableName="tb_cobranca_viagem"/>
 		</rollback>
 	</changeSet>
 
 	<changeSet id="20220126163000-4" author="FernandoMF-dev" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
-		<createSequence sequenceName="SEQ_COBRANCA_VIAGEM" startValue="1" incrementBy="1"/>
+		<createSequence sequenceName="seq_cobranca_viagem" startValue="1" incrementBy="1"/>
 
 		<rollback>
-			<dropSequence sequenceName="SEQ_COBRANCA_VIAGEM"/>
+			<dropSequence sequenceName="seq_cobranca_viagem"/>
 		</rollback>
 	</changeSet>
 
