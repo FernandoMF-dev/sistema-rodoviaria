@@ -23,7 +23,7 @@ import java.time.LocalDateTime;
 public class CobrancaViagem {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_COBRANCA_VIAGEM")
 	@SequenceGenerator(name = "SEQ_COBRANCA_VIAGEM", sequenceName = "SEQ_COBRANCA_VIAGEM", allocationSize = 1)
 	@Column(name = "ID_COBRANCA_VIAGEM", nullable = false)
 	private Long id;

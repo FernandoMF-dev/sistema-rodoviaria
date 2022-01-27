@@ -20,7 +20,7 @@ import java.time.LocalTime;
 public class Onibus implements Serializable {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_ONIBUS")
 	@SequenceGenerator(name = "SEQ_ONIBUS", sequenceName = "SEQ_ONIBUS", allocationSize = 1)
 	@Column(name = "ID_ONIBUS", nullable = false)
 	private Long id;

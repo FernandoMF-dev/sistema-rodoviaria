@@ -22,7 +22,7 @@ import javax.persistence.Table;
 public class NotaFiscal {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_NOTA_FISCAL")
 	@SequenceGenerator(name = "SEQ_NOTA_FISCAL", sequenceName = "SEQ_NOTA_FISCAL", allocationSize = 1)
 	@Column(name = "ID_NOTA_FISCAL", nullable = false)
 	private Long id;

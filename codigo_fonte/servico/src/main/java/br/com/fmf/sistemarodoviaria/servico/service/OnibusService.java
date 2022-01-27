@@ -32,6 +32,9 @@ public class OnibusService {
 
 	public OnibusDto update(OnibusDto dto) {
 		Onibus entity = onibusMapper.toEntity(dto);
+
+		entity.setExcluido(false);
+
 		return save(entity);
 	}
 

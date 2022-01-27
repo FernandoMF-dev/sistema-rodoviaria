@@ -25,7 +25,7 @@ import java.io.Serializable;
 public class Passe implements Serializable {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_PASSE")
 	@SequenceGenerator(name = "SEQ_PASSE", sequenceName = "SEQ_PASSE", allocationSize = 1)
 	@Column(name = "ID_PASSE", nullable = false)
 	private Long id;
