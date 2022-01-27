@@ -9,9 +9,6 @@ A
 servico/pom.xml,2/5/25fc201e2b07539754c5cdad7f9d2bc09a5ed1d2
 >
 .gitattributes,2/4/24139dae656713ba861751fb2c2ac38839349a7a
-:
-
-.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 =
 .editorconfig,6/2/626a747c8694eaae66f2afb3d1a745b045782c70
 ï
@@ -20,8 +17,6 @@ eservico/src/main/java/br/com/fmf/sistemarodoviaria/servico/SistemaDeRodoviariaS
 Zdocumento/src/main/java/br/com/fmf/sistemarodoviaria/documento/rest/DocumentoResource.java,6/9/6972df24647423d230ad00f29692aedfade94bab
 ç
 ]servico/src/main/java/br/com/fmf/sistemarodoviaria/servico/service/feign/DocumentoClient.java,a/c/acdce967589da0adec9e456c663a27f37674e069
-7
-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 E
 .jpb/jpb-settings.xml,4/4/44d3869e4ab8f5a6660709b629065ab6e5795b01
 ã

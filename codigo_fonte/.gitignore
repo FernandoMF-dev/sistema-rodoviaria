@@ -379,3 +379,4 @@
 
 **/**/package-lock.json
 !**/ckeditor/**
+/.idea/

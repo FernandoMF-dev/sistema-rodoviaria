@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b11c9271-61ff-4545-ba42-14d171cdd9ed" name="Changes" comment="Criando tabela 'TB_NOTA_FISCAL'">
+    <list default="true" id="b11c9271-61ff-4545-ba42-14d171cdd9ed" name="Changes" comment="Criando classes DTO">
+      <change afterPath="$PROJECT_DIR$/servico/src/main/java/br/com/fmf/sistemarodoviaria/servico/service/mapper/EntityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servico/src/main/java/br/com/fmf/sistemarodoviaria/servico/service/mapper/PessoaMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,11 +21,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
         <option value="com.haulmont.jpb.JpaEntity" />
         <option value="com.haulmont.jpb.JpaLiquibaseChangeLog" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -77,6 +83,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="DtoCreateDialog.EQUALS_HASH_CODE_INITIAL_PROP_KEY" value="false" />
+    <property name="DtoCreateDialog.HAS_SETTERS_INITIAL_INITIAL_PROP_KEY" value="true" />
+    <property name="DtoCreateDialog.TO_STRING_INITIAL_PROP_KEY" value="false" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -143,6 +152,7 @@
       <workItem from="1643205728657" duration="3619000" />
       <workItem from="1643219667934" duration="724000" />
       <workItem from="1643220455629" duration="6856000" />
+      <workItem from="1643277705123" duration="3079000" />
     </task>
     <task id="LOCAL-00001" summary="Criando o pom parent e movendo a pasta docker">
       <created>1643151600709</created>
@@ -291,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643226461755</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Criando classes DTO">
+      <created>1643279072984</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1643279072985</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +344,8 @@
     <MESSAGE value="Criando tabela 'TB_COBRANCA_VIAGEM'" />
     <MESSAGE value="Criando tabela 'TB_COBRANCA_VIAGEM'&#10;&#10;Signed-off-by: Fernando Martins Ferreira &lt;fernando.ferreira@basis.com.br&gt;" />
     <MESSAGE value="Criando tabela 'TB_NOTA_FISCAL'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando tabela 'TB_NOTA_FISCAL'" />
+    <MESSAGE value="Criando classes DTO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando classes DTO" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
