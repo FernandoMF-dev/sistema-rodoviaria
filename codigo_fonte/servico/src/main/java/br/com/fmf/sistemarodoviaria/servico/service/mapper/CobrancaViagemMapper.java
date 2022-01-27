@@ -11,7 +11,7 @@ import org.mapstruct.MappingTarget;
 
 import java.util.Objects;
 
-@Mapper(componentModel = "spring")
+@Mapper(componentModel = "spring", uses = {PasseMapper.class, OnibusMapper.class})
 public interface CobrancaViagemMapper extends EntityMapper<CobrancaViagemDto, CobrancaViagem> {
 
 	@Override

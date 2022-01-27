@@ -10,6 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -26,12 +27,16 @@ public class PessoaService {
 
 		entity.setId(null);
 		entity.setExcluido(false);
+		entity.setDataNascimento(LocalDate.now());
 
 		return save(entity);
 	}
 
 	public PessoaDto update(PessoaDto dto) {
 		Pessoa entity = pessoaMapper.toEntity(dto);
+
+		entity.setExcluido(false);
+
 		return save(entity);
 	}
 
