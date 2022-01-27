@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface OnibusRepository extends JpaRepository<Onibus, Long>, JpaSpecificationExecutor<Onibus> {
+
 	List<Onibus> findOnibusByExcluidoIsFalse();
 
 	Optional<Onibus> findByIdAndExcluidoIsFalse(Long id);
@@ -18,4 +19,5 @@ public interface OnibusRepository extends JpaRepository<Onibus, Long>, JpaSpecif
 	@Modifying
 	@Query("UPDATE Onibus o SET o.excluido = TRUE WHERE o.id = :id")
 	void delete(@Param("id") Long id);
+
 }
