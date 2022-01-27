@@ -1,6 +1,6 @@
 package br.com.fmf.sistemarodoviaria.servico.domain.entity;
 
-import br.com.fmf.sistemarodoviaria.servico.domain.enums.CategoriaPasse;
+import br.com.fmf.sistemarodoviaria.servico.domain.enums.CategoriaPasseEnum;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -41,7 +41,7 @@ public class Passe implements Serializable {
 
 	@Enumerated(EnumType.STRING)
 	@Column(name = "CATEGORIA", nullable = false)
-	private CategoriaPasse categoria;
+	private CategoriaPasseEnum categoria;
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "ID_PESSOA", nullable = false)

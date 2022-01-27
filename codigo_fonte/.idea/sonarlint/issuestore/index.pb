@@ -22,3 +22,15 @@ Zdocumento/src/main/java/br/com/fmf/sistemarodoviaria/documento/rest/DocumentoRe
 ]servico/src/main/java/br/com/fmf/sistemarodoviaria/servico/service/feign/DocumentoClient.java,a/c/acdce967589da0adec9e456c663a27f37674e069
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+E
+.jpb/jpb-settings.xml,4/4/44d3869e4ab8f5a6660709b629065ab6e5795b01
+‹
+[servico/src/main/java/br/com/fmf/sistemarodoviaria/servico/domain/enums/CategoriaPasse.java,9/e/9efb2d04267e31d8b756fcac32226070423bec9b
+Œ
+\servico/src/main/java/br/com/fmf/sistemarodoviaria/servico/domain/entity/CobrancaViagem.java,0/9/09f9f5a7c04cd1803653c841e4d4649b23eaed83
+ˆ
+Xservico/src/main/java/br/com/fmf/sistemarodoviaria/servico/domain/entity/NotaFiscal.java,1/a/1aa11f9dfcb895b7bbae214b8e8dc50220b2007c
+„
+Tservico/src/main/java/br/com/fmf/sistemarodoviaria/servico/domain/entity/Onibus.java,6/9/6963b5e737ff5ce647eaa3cdfe9ea8e483995691
+„
+Tservico/src/main/java/br/com/fmf/sistemarodoviaria/servico/domain/entity/Pessoa.java,6/2/62f3760a8bb3dc747b2445aa5a57fafe6aa2cb4c

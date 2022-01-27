@@ -5,6 +5,6 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public enum CategoriaPasse {
+public enum CategoriaPasseEnum {
 	NORMAL, ESTUDANTE
 }

@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b11c9271-61ff-4545-ba42-14d171cdd9ed" name="Changes" comment="Criando tabela 'TB_COBRANCA_VIAGEM'&#10;&#10;Signed-off-by: Fernando Martins Ferreira &lt;fernando.ferreira@basis.com.br&gt;">
-      <change afterPath="$PROJECT_DIR$/servico/src/main/resources/liquibase/changelogs/20220126164000_create_table_nota_fiscal.xml" afterDir="false" />
+    <list default="true" id="b11c9271-61ff-4545-ba42-14d171cdd9ed" name="Changes" comment="Criando tabela 'TB_NOTA_FISCAL'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servico/src/main/resources/liquibase/master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/servico/src/main/resources/liquibase/master.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +76,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -88,7 +87,7 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/servico/src/main/resources/liquibase/changelogs/20220126154500_create_table_pessoa.xml" />
-    <property name="settings.editor.selected.configurable" value="com.haulmont.jpb.entityDeclaration" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -143,7 +142,7 @@
       <workItem from="1643201109048" duration="306000" />
       <workItem from="1643205728657" duration="3619000" />
       <workItem from="1643219667934" duration="724000" />
-      <workItem from="1643220455629" duration="5981000" />
+      <workItem from="1643220455629" duration="6856000" />
     </task>
     <task id="LOCAL-00001" summary="Criando o pom parent e movendo a pasta docker">
       <created>1643151600709</created>
@@ -285,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643225974514</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Criando tabela 'TB_NOTA_FISCAL'">
+      <created>1643226461755</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1643226461755</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,8 +326,10 @@
     <MESSAGE value="Criando tabela 'TB_PASSE'&#10;&#10;Signed-off-by: Fernando Martins Ferreira &lt;fernando.ferreira@basis.com.br&gt;" />
     <MESSAGE value="Criando tabela 'TB_COBRANCA_VIAGEM'" />
     <MESSAGE value="Criando tabela 'TB_COBRANCA_VIAGEM'&#10;&#10;Signed-off-by: Fernando Martins Ferreira &lt;fernando.ferreira@basis.com.br&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando tabela 'TB_COBRANCA_VIAGEM'&#10;&#10;Signed-off-by: Fernando Martins Ferreira &lt;fernando.ferreira@basis.com.br&gt;" />
+    <MESSAGE value="Criando tabela 'TB_NOTA_FISCAL'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando tabela 'TB_NOTA_FISCAL'" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
