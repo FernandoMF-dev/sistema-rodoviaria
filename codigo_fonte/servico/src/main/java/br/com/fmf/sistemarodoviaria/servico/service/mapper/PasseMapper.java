@@ -19,10 +19,12 @@ public interface PasseMapper extends EntityMapper<PasseDto, Passe> {
 
 	@AfterMapping
 	default void mapPessoaToEntity(@MappingTarget Passe entity, PasseDto dto) {
-		if (Objects.isNull(dto.getPessoa()) && Objects.nonNull(dto.getPessoaId())) {
-			Pessoa pessoa = new Pessoa();
+		if (Objects.isNull(dto.getPessoa())) {
+			entity.setPessoa(new Pessoa());
+		}
 
-			pessoa.setId(dto.getPessoaId());
+		if (Objects.nonNull(dto.getPessoaId())) {
+			entity.getPessoa().setId(dto.getPessoaId());
 		}
 	}
 
