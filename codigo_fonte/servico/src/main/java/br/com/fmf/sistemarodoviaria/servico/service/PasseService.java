@@ -26,12 +26,16 @@ public class PasseService {
 
 		entity.setId(null);
 		entity.setExcluido(false);
+		entity.setAtivo(true);
 
 		return save(entity);
 	}
 
 	public PasseDto update(PasseDto dto) {
 		Passe entity = passeMapper.toEntity(dto);
+
+		entity.setExcluido(false);
+
 		return save(entity);
 	}
 
