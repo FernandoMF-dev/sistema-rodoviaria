@@ -13,4 +13,12 @@
 	<name>Sistema de Rodoviaria - Documento</name>
 	<description>Projeto responsável pelo gerenciamento de arquivo</description>
 
+	<dependencies>
+		<dependency>
+			<groupId>io.minio</groupId>
+			<artifactId>minio</artifactId>
+			<version>8.2.2</version>
+		</dependency>
+	</dependencies>
+
 </project>

@@ -6,3 +6,8 @@ services:
     extends:
       file: containers/postgresql.yml
       service: servicorodoviaria-postgresql
+  servicorodoviaria-minio:
+    container_name: servicorodoviaria-minio
+    extends:
+      file: containers/minio.yml
+      service: servicorodoviaria-minio
