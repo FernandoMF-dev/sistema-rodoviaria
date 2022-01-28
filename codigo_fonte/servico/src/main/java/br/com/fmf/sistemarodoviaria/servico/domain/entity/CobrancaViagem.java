@@ -3,7 +3,6 @@ package br.com.fmf.sistemarodoviaria.servico.domain.entity;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -34,11 +33,11 @@ public class CobrancaViagem {
 	@Column(name = "VALOR", nullable = false)
 	private Double valor;
 
-	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
+	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "ID_PASSE", nullable = false)
 	private Passe passe;
 
-	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
+	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "ID_ONIBUS", nullable = false)
 	private Onibus onibus;
 

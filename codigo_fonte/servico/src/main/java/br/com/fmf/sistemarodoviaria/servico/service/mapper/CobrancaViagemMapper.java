@@ -21,7 +21,7 @@ public interface CobrancaViagemMapper extends EntityMapper<CobrancaViagemDto, Co
 
 	@AfterMapping
 	default void mapPasseToEntity(@MappingTarget CobrancaViagem entity, CobrancaViagemDto dto) {
-		if (Objects.isNull(dto.getPasseId())) {
+		if (Objects.isNull(dto.getPasse())) {
 			entity.setPasse(new Passe());
 		}
 
@@ -32,7 +32,7 @@ public interface CobrancaViagemMapper extends EntityMapper<CobrancaViagemDto, Co
 
 	@AfterMapping
 	default void mapOnibusToEntity(@MappingTarget CobrancaViagem entity, CobrancaViagemDto dto) {
-		if (Objects.isNull(dto.getOnibusId())) {
+		if (Objects.isNull(dto.getOnibus())) {
 			entity.setOnibus(new Onibus());
 		}
 

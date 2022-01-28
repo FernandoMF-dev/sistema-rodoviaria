@@ -10,6 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -26,12 +27,16 @@ public class CobrancaViagemService {
 
 		entity.setId(null);
 		entity.setExcluido(false);
+		entity.setDataHora(LocalDateTime.now());
 
 		return save(entity);
 	}
 
 	public CobrancaViagemDto update(CobrancaViagemDto dto) {
 		CobrancaViagem entity = cobrancaViagemMapper.toEntity(dto);
+
+		entity.setExcluido(false);
+
 		return save(entity);
 	}
 
