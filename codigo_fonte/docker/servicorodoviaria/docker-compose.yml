@@ -1,13 +1,18 @@
 version: "2.4"
 
 services:
-  servicorodoviaria-postgresql:
+  postgresql:
     container_name: servicorodoviaria-postgresql
     extends:
       file: containers/postgresql.yml
-      service: servicorodoviaria-postgresql
-  servicorodoviaria-minio:
+      service: postgresql
+  minio:
     container_name: servicorodoviaria-minio
     extends:
       file: containers/minio.yml
-      service: servicorodoviaria-minio
+      service: minio
+  elasticsearch:
+    container_name: servicorodoviaria-elasticsearch
+    extends:
+      service: elasticsearch
+      file: containers/elasticsearch.yml

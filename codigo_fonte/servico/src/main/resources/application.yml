@@ -5,9 +5,19 @@ spring:
     password: fmf_password
   liquibase:
     change-log: classpath*:liquibase/master.xml
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
   jpa:
     hibernate:
       ddl-auto: none
       naming:
         physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
         implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+
+application:
+  module:
+    documento: localhost:8081/api/documento
+  elasticsearch:
+    url: localhost:9200
