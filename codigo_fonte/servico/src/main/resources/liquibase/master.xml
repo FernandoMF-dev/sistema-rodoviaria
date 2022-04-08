@@ -10,4 +10,5 @@
 	<include file="liquibase/changelogs/20220126161500_create_table_passe.xml" relativeToChangelogFile="false"/>
 	<include file="liquibase/changelogs/20220126163000_create_table_cobranca_viagem.xml" relativeToChangelogFile="false"/>
 	<include file="liquibase/changelogs/20220126164000_create_table_nota_fiscal.xml" relativeToChangelogFile="false"/>
+	<include file="liquibase/changelogs/20220408074500_create_table_arquivo.xml" relativeToChangelogFile="false"/>
 </databaseChangeLog>

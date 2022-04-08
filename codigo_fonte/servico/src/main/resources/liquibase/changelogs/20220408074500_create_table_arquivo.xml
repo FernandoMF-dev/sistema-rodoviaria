@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+		xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.5.xsd">
+
+	<changeSet id="20220408074500-1" author="FernandoMF-dev">
+		<createTable tableName="tb_arquivo"
+					 remarks="Chave para identificacao do arquivo no serviço de arquivos binários">
+			<column type="uuid" name="uuid">
+				<constraints nullable="false"/>
+			</column>
+
+			<column type="varchar(255)" name="nome" remarks="Nome do arquivo">
+				<constraints nullable="false"/>
+			</column>
+
+			<column name="mime_type" type="varchar(30)" remarks="Tipo do arquivo">
+				<constraints nullable="false"/>
+			</column>
+
+			<column name="data_upload" type="datetime" remarks="Data em que o arquivo foi enviado">
+				<constraints nullable="false"/>
+			</column>
+
+			<column name="tamanho_bytes" type="bigint" remarks="Tamanho em bytes do arquivo">
+				<constraints nullable="false"/>
+			</column>
+
+			<column name="excluido" type="BOOLEAN" defaultValueBoolean="false" remarks="Campo para exclusão lógica">
+				<constraints nullable="false"/>
+			</column>
+		</createTable>
+
+		<rollback>
+			<dropTable tableName="tb_arquivo"/>
+		</rollback>
+	</changeSet>
+
+	<changeSet id="20220408074500-2" author="FernandoMF-dev">
+		<addPrimaryKey tableName="tb_arquivo" columnNames="uuid" constraintName="pk_arquivo"/>
+
+		<rollback>
+			<dropPrimaryKey tableName="tb_arquivo" constraintName="pk_arquivo"/>
+		</rollback>
+	</changeSet>
+
+</databaseChangeLog>
