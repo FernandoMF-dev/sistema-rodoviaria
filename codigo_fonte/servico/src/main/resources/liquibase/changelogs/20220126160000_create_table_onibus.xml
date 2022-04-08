@@ -8,31 +8,31 @@
 
 	<changeSet id="20220126160000-1" author="FernandoMF-dev" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
 		<createTable tableName="tb_onibus">
-			<column name="id_onibus" type="BIGINT">
+			<column name="id_onibus" type="BIGINT" remarks="Chave primária de TB_ONIBUS">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="cidade" type="VARCHAR(50)">
+			<column name="cidade" type="VARCHAR(50)" remarks="Cidade onde o ônibus está alocado">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="estado" type="VARCHAR(2)">
+			<column name="estado" type="VARCHAR(2)" remarks="Estado onde o ônibus está alocado">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="nome_linha" type="VARCHAR(100)">
+			<column name="nome_linha" type="VARCHAR(100)" remarks="Nome da linha do ônibus">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="inicio_circulacao" type="TIME">
+			<column name="inicio_circulacao" type="TIME" remarks="Hora do dia em que o ônibus começa a circular">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="fim_circulacao" type="TIME">
+			<column name="fim_circulacao" type="TIME" remarks="Hora do dia em que o ônibus termina de circular">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="excluido" type="BOOLEAN" defaultValueBoolean="false">
+			<column name="excluido" type="BOOLEAN" defaultValueBoolean="false" remarks="Campo para exclusão lógica">
 				<constraints nullable="false"/>
 			</column>
 		</createTable>

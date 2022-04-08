@@ -20,7 +20,7 @@
 
 			<column name="extensao" type="VARCHAR(20)"/>
 
-			<column name="excluido" type="BOOLEAN" defaultValueBoolean="false">
+			<column name="excluido" type="BOOLEAN" defaultValueBoolean="false" remarks="Campo para exclusão lógica">
 				<constraints nullable="false"/>
 			</column>
 		</createTable>

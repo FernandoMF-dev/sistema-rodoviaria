@@ -7,35 +7,35 @@
 
 	<changeSet id="20220126154500-1" author="FernandoMF-dev" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
 		<createTable tableName="tb_pessoa">
-			<column name="id_pessoa" type="BIGINT">
+			<column name="id_pessoa" type="BIGINT" remarks="Chave primária de TB_PESSOA">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="nome" type="VARCHAR(100)">
+			<column name="nome" type="VARCHAR(100)" remarks="Nome da pessoa">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="sobrenome" type="VARCHAR(100)">
+			<column name="sobrenome" type="VARCHAR(100)" remarks="Sobrenome da pessoa">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="data_nascimento" type="DATE">
+			<column name="data_nascimento" type="DATE" remarks="Data de nascimento da Ppssoa">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="cidade" type="VARCHAR(50)">
+			<column name="cidade" type="VARCHAR(50)" remarks="Nome da cidade onde a pessoa mora">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="estado" type="VARCHAR(2)">
+			<column name="estado" type="CHAR(2)" remarks="Sigla do estado onde a pessoa mora">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="telefone" type="VARCHAR(20)"/>
+			<column name="telefone" type="VARCHAR(20)" remarks="Telefeno de contado da pessoa"/>
 
-			<column name="email" type="VARCHAR(200)"/>
+			<column name="email" type="VARCHAR(200)" remarks="Email de contado da pessoa"/>
 
-			<column name="excluido" type="BOOLEAN" defaultValueBoolean="false">
+			<column name="excluido" type="BOOLEAN" defaultValueBoolean="false" remarks="Campo para exclusão lógica">
 				<constraints nullable="false"/>
 			</column>
 		</createTable>

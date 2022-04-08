@@ -7,31 +7,32 @@
 
 	<changeSet id="20220126161500-1" author="FernandoMF-dev" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
 		<createTable tableName="tb_passe">
-			<column name="id_passe" type="BIGINT">
+			<column name="id_passe" type="BIGINT" remarks="Chave primária de TB_PASSE">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="rfid" type="BIGINT">
+			<column name="rfid" type="BIGINT" remarks="Identificador de radiofrequência">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="saldo" type="DOUBLE">
+			<column name="saldo" type="DOUBLE" remarks="Saldo atual do passo">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="ativo" type="BOOLEAN" defaultValueBoolean="true">
+			<column name="ativo" type="BOOLEAN" defaultValueBoolean="true"
+					remarks="Controla se o passe está ativo ou nãp para uso">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="categoria" type="VARCHAR(255)">
+			<column name="categoria" type="VARCHAR(255)" remarks="Categoria do passe">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="id_pessoa" type="BIGINT">
+			<column name="id_pessoa" type="BIGINT" remarks="Chave primária da PESSOA dona do passe">
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="excluido" type="BOOLEAN" defaultValueBoolean="false">
+			<column name="excluido" type="BOOLEAN" defaultValueBoolean="false" remarks="Campo para exclusão lógica">
 				<constraints nullable="false"/>
 			</column>
 		</createTable>
