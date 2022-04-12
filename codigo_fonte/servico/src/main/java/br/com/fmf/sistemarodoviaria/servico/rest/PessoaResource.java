@@ -2,6 +2,7 @@ package br.com.fmf.sistemarodoviaria.servico.rest;
 
 import br.com.fmf.sistemarodoviaria.servico.service.PessoaService;
 import br.com.fmf.sistemarodoviaria.servico.service.dto.PessoaDto;
+import br.com.fmf.sistemarodoviaria.servico.service.dto.PessoaListDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -26,7 +27,7 @@ public class PessoaResource {
 	private final PessoaService pessoaService;
 
 	@GetMapping
-	public ResponseEntity<List<PessoaDto>> findAll() {
+	public ResponseEntity<List<PessoaListDto>> findAll() {
 		return new ResponseEntity<>(pessoaService.findAll(), HttpStatus.OK);
 	}
 
