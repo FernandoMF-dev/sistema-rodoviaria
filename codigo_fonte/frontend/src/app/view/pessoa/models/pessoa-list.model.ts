@@ -1,4 +1,4 @@
-export class Pessoa {
+export class PessoaList {
 	id?: number;
 	nome?: string;
 	sobrenome?: string;
