@@ -1,1 +1,29 @@
-<p>pessoa-list works!</p>
+<p-table [(selection)]="pessoaSelecionada" [columns]="tableConfig" [value]="pessoas" selectionMode="single">
+	<ng-template let-columns pTemplate="header">
+		<tr>
+			<th *ngFor="let col of columns">
+				{{ col.header }}
+			</th>
+		</tr>
+	</ng-template>
+
+	<ng-template let-columns="columns" let-rowData pTemplate="body">
+		<tr>
+			<td *ngFor="let col of columns">
+				<ng-template [ngIf]="col.text">
+					{{ rowData[col.field] }}
+				</ng-template>
+
+				<ng-template [ngIf]="col.date">
+					{{ rowData[col.field] | date: 'dd/MM/yyyy' }}
+				</ng-template>
+
+				<ng-template [ngIf]="col.compound">
+					<span *ngFor="let compoundField of col.field">
+						{{ rowData[compoundField] }}
+					</span>
+				</ng-template>
+			</td>
+		</tr>
+	</ng-template>
+</p-table>

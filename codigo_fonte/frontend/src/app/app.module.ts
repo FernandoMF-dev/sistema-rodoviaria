@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ErrorModule, SecurityModule, VersionTagModule } from '@nuvem/angular-base';
 import { BreadcrumbModule, ErrorStackModule, MenuModule, PageNotificationModule } from '@nuvem/primeng-components';
 import { BlockUIModule } from 'ng-block-ui';
+import { ConfirmationService } from 'primeng';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -39,6 +40,7 @@ import { SharedModule } from './shared/shared.module';
 		MenuModule
 	],
 	providers: [
+		ConfirmationService,
 		{ provide: LocationStrategy, useClass: HashLocationStrategy }
 	],
 	bootstrap: [AppComponent]
