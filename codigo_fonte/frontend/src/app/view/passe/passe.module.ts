@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { SharedModule } from '../../shared/shared.module';
 
 import { PasseRoutingModule } from './passe-routing.module';
 
@@ -8,7 +9,8 @@ import { PasseRoutingModule } from './passe-routing.module';
 	declarations: [],
 	imports: [
 		CommonModule,
-		PasseRoutingModule
+		PasseRoutingModule,
+		SharedModule
 	]
 })
 export class PasseModule {

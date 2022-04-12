@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { SharedModule } from '../../shared/shared.module';
 
 import { OnibusRoutingModule } from './onibus-routing.module';
 
@@ -8,7 +9,8 @@ import { OnibusRoutingModule } from './onibus-routing.module';
 	declarations: [],
 	imports: [
 		CommonModule,
-		OnibusRoutingModule
+		OnibusRoutingModule,
+		SharedModule
 	]
 })
 export class OnibusModule {
