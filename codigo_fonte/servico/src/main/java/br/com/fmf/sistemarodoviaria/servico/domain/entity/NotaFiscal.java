@@ -32,11 +32,9 @@ public class NotaFiscal implements Serializable {
 	@JoinColumn(name = "ID_COBRANCA_VIAGEM", nullable = false)
 	private CobrancaViagem cobranca;
 
-	@Column(name = "NOME_ARQUIVO", length = 200)
-	private String nomeArquivo;
-
-	@Column(name = "EXTENSAO", length = 20)
-	private String extensao;
+	@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
+	@JoinColumn(name = "UUID_ARQUIVO", nullable = false)
+	private Arquivo arquivo;
 
 	@Column(name = "EXCLUIDO", nullable = false)
 	private Boolean excluido;

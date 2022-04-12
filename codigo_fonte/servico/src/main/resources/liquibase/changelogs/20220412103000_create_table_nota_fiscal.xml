@@ -16,9 +16,7 @@
 				<constraints nullable="false"/>
 			</column>
 
-			<column name="nome_arquivo" type="VARCHAR(200)"/>
-
-			<column name="extensao" type="VARCHAR(20)"/>
+			<column name="uuid_arquivo" type="uuid"/>
 
 			<column name="excluido" type="BOOLEAN" defaultValueBoolean="false" remarks="Campo para exclusão lógica">
 				<constraints nullable="false"/>
@@ -42,6 +40,10 @@
 		<addForeignKeyConstraint baseTableName="tb_nota_fiscal" baseColumnNames="id_cobranca_viagem"
 								 referencedTableName="tb_cobranca_viagem" referencedColumnNames="id_cobranca_viagem"
 								 constraintName="fk_nota_fiscal_cobranca_viagem"/>
+
+		<addForeignKeyConstraint baseTableName="tb_nota_fiscal" baseColumnNames="uuid_arquivo"
+								 referencedTableName="tb_arquivo" referencedColumnNames="uuid"
+								 constraintName="fk_nota_fiscal_arquivo"/>
 
 		<rollback>
 			<dropAllForeignKeyConstraints baseTableName="tb_nota_fiscal"/>
