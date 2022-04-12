@@ -33,3 +33,24 @@
 		</div>
 	</div>
 </block-ui>
+
+<p-confirmDialog #cd class="cabecalho-dialog" header="Confirmation" icon="pi pi-exclamation-triangle icon-warning">
+	<p-footer>
+		<div class="ui-g ui-fluid">
+			<div *ngIf="cd?.confirmation?.rejectVisible || cd?.confirmation?.rejectLabel"
+				 class="ui-g-6 ui-sm-6 ui-g-offset-0 ui-sm-offset-0">
+				<button (click)="cd.reject()" [label]="cd.confirmation.rejectLabel" class="ui-button-danger"
+						icon="pi pi-times"
+						pButton
+						type="button"></button>
+			</div>
+
+			<div *ngIf="cd?.confirmation?.acceptVisible || cd?.confirmation?.acceptLabel"
+				 [ngClass]="{'ui-g-offset-0': cd?.confirmation?.rejectVisible, 'ui-g-offset-6': !cd?.confirmation?.rejectVisible}"
+				 class="ui-g-6 ui-sm-6 ui-sm-offset-0">
+				<button (click)="cd.accept()" [label]="cd.confirmation.acceptLabel" icon="pi pi-check" pButton
+						type="button"></button>
+			</div>
+		</div>
+	</p-footer>
+</p-confirmDialog>
